@@ -108,3 +108,14 @@ FINDINDEX:
 Es muy similar al anterior, realiza una busqueda del elemento; pero en lugar de regresar el elemtno, resgresa sun indice, sino la encuentra nos devuelve un -1
 Esta función es particularmente útil en elementos que necesitamos modificar de un arreglo original, dentro de una copia
 */
+
+const indiceChihuahua = razaDeperros.findIndex((raza)=>raza==="Chihuahua");
+
+if(indiceChihuahua>-1){
+  //el resultado si esta dentro del arreglo
+  console.log(razaDeperros[indiceChihuahua]);
+  //aparte se va a agregar un texto
+  razaDeperros[indiceChihuahua] += "(Es una raza de perros chiquita y escandalosa, NOTA: no me gusta)";
+  console.log(razaDeperros[indiceChihuahua]);
+    console.log(razaDeperros);
+}
